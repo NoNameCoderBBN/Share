@@ -3,7 +3,7 @@
 
 1. 刷入 uboot （自己网上找一下别人的教程）
 
-2. 在 uboot 中输入固件    immortalwrt-23.05.4-f1ac0318a1c7-mediatek-filogic-xiaomi_mi-router-wr30u-112m-nmbm-squashfs-sysupgrade.bin
+2. 在 uboot 中刷入固件    immortalwrt-23.05.4-f1ac0318a1c7-mediatek-filogic-xiaomi_mi-router-wr30u-112m-nmbm-squashfs-sysupgrade.bin
 
 3. 登录固件（默认没有密码）
    在 系统--> 备份 --> 恢复配置 中，使用我的文件 AP-WR30U-2025-03-23.tar.gz  
@@ -23,3 +23,10 @@
 	所有AP的名字只要设置的一样，就可以实现 无缝切换，没有麻烦的配置了
 
 
+参考：
+https://post.smzdm.com/p/a6lr03wg/
+https://jp.v2ex.com/t/941746
+
+ImmortalWrt  Build 固件加入了下面的包
+luci-theme-argon  luci-app-dawn   dawn  ubus   
+ 
