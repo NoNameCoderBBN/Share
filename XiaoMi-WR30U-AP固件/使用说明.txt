@@ -1,0 +1,25 @@
+
+小米 WR30U 路由器
+
+1. 刷入 uboot （自己网上找一下别人的教程）
+
+2. 在 uboot 中输入固件    immortalwrt-23.05.4-f1ac0318a1c7-mediatek-filogic-xiaomi_mi-router-wr30u-112m-nmbm-squashfs-sysupgrade.bin
+
+3. 登录固件（默认没有密码）
+   在 系统--> 备份 --> 恢复配置 中，使用我的文件 AP-WR30U-2025-03-23.tar.gz  
+   
+4. 把AP接入到家里网络中（AP 关闭了 dhcp ，所以需要接入家里网络获取IP，否则无法访问）
+
+5. 连接无线，进去自己修改
+
+	无线：MTK2G
+	密码：MTK2G888888
+	
+	无线：MTK5G
+	密码：MTK5G888888	
+	
+	
+7. 你需要布置几个 AP，就上面做几次
+	所有AP的名字只要设置的一样，就可以实现 无缝切换，没有麻烦的配置了
+
+
