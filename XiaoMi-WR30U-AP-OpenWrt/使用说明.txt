@@ -1,0 +1,47 @@
+
+
+1. 刷  Uboot
+	由于我们使用的是 OpenWrt 官方固件，所以需要用专门的 uboot 才能刷
+	首先 WR30U 刷入   mt7981_wr30u-fip-fixed-parts-multi-layout.bin 
+	（uboot 怎么刷请自行百度）
+	
+2. 刷 OpenWrt 官方固件
+	路由器，用牙签桶住 reset，然后插入电源，蓝色灯亮起表明 uboot 进入成功
+	uboot 的IP是  192.168.31.1 
+	你需要手动把你的电脑IP设置为  192.168.31.100 
+	
+	访问 http://192.168.31.1/
+	选择 OpenWrt 官方 固件  openwrt-23.05.5-2306ee072315-mediatek-filogic-xiaomi_mi-router-wr30u-stock-squashfs-sysupgrade.bin
+	选择 mtd layout : default  
+	刷入固件（见截图）
+
+3. 导入配置
+	把你的电脑IP改回 DHCP 方式
+	进入 openwrt 界面  http://192.168.1.1 
+	System --> Backup --> Restore  使用  AP-WR30U-2025-03-23.tar.gz 
+	
+	导入之后 AP 就配置好了 ，默认登录没有密码 
+	
+4. 访问 AP
+	由于这是  AP 固件，默认是没有 IP 地址的，你需要把 AP 插入网线，进入到你的家庭网络中它才能获得 IP
+	
+5. 连接无线，进去自己修改
+
+无线：MTK2G
+密码：MTK2G888888
+
+无线：MTK5G
+密码：MTK5G888888	
+
+6. 你需要布置几个 AP，就上面做几次
+	所有AP的名字只要设置的一样，就可以实现 无缝切换，没有麻烦的配置了
+	
+7. 美化界面
+	嫌 openwrt 官方界面丑的话，可以安装  luci-theme-argon_2.3.2-r20250207_all.ipk 这个包，界面就漂亮了
+
+	
+下面是 OpenWrt 官方固件的包  23.05.5
+ 
+base-files busybox ca-bundle dnsmasq dropbear firewall4 fstools kmod-crypto-hw-safexcel kmod-gpio-button-hotplug kmod-leds-gpio kmod-mt7915e kmod-nft-offload kmod-phy-aquantia libc libgcc libustream-mbedtls logd mtd netifd nftables odhcp6c odhcpd-ipv6only opkg ppp ppp-mod-pppoe procd procd-seccomp procd-ujail uboot-envtools uci uclient-fetch urandom-seed urngd wpad-openssl kmod-mt7981-firmware mt7981-wo-firmware luci lrzsz luci-app-dawn dawn ubus 
+
+
