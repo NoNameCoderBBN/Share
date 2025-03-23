@@ -1,4 +1,7 @@
 
+恩山帖子
+https://www.right.com.cn/forum/forum.php?mod=viewthread&tid=8421914
+
 小米 WR30U 路由器
 
 1. 刷入 uboot （自己网上找一下别人的教程）

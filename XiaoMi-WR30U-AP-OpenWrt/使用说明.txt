@@ -1,4 +1,5 @@
-
+恩山帖子
+https://www.right.com.cn/forum/forum.php?mod=viewthread&tid=8421914
 
 1. 刷  Uboot
 	由于我们使用的是 OpenWrt 官方固件，所以需要用专门的 uboot 才能刷
